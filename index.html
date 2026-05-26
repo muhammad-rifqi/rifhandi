@@ -216,8 +216,8 @@
   <script>
   const SUPABASE_URL = "https://ufbjibozwdsinnmlztxa.supabase.co";
   const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVmYmppYm96d2RzaW5ubWx6dHhhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk3NjE1NDIsImV4cCI6MjA5NTMzNzU0Mn0.xNlvpDaf-RhTSyq2NUbLTlkYRuwrKCqO7oSWCEIwETU";
-  
-  fetch(`${SUPABASE_URL}/rest/v1/products`, {
+  // https://YOUR_PROJECT_ID.supabase.co/rest/v1/portofolio
+  fetch(`${SUPABASE_URL}/rest/v1/portofolio`, {
     method: "GET",
     headers: {
       apikey: SUPABASE_KEY,
@@ -226,7 +226,7 @@
   })
     .then(res => res.json())
     .then(data => {
-      // console.log("Data produk:", data);
+      console.log("Data:", data);
     })
     .catch(err => console.error("Error:", err));
   </script>
